@@ -96,9 +96,9 @@
 		<div class="content"><div class="ic"></div>
 			<div class="container_12">
 				<div class="grid_6">
-					<h2>Meet Our Team</h2>
+					<h2>We Are Volunteers</h2>
 					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
-					<div class="extra_wrapper">
+					<div>
 						<p class="col2"><a href=""> <br>We, the students of SUST work for helpless people.</a></p>
 					     We want a earth with happiness,love and patriotism. . . <br>
 						<a href="" class="btn">Learn More</a>
@@ -125,31 +125,9 @@
 								Swapnotthan
 								website launched
 							</div>
-					<!--	</li>
-						<li>
-							<time datetime="2014-01-01">02<span>Feb</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Dereamuagne</a></div>
-								amus at magn
-								malesuada faut
-							</div>
-						</li>
-						<li>
-							<time datetime="2014-01-01">20<span>Feb</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Hovamuagrt</a></div>
-								emus at mago malesuada fau
-							</div>
-						</li>
-						<li>
-							<time datetime="2014-01-01">05<span>Mar</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Meloamuar</a></div>
-								ferus at magne malesuada faui
-							</div>
-						</li>
-				-->	</ul> 
+					</ul>
 				</div>
+
 				<div class="grid_9">
 					<h2>Our Campaigns</h2>
 					<section>

@@ -13,6 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('layouts.default');
+	return View::make('user.index');
+	
+});
+Route::get('/whatWeDo', function()
+{
+	return View::make('user.whatWeDo');
+	
+});
+Route::get('/getInvolved', function()
+{
+	return View::make('user.getInvolved');
 	
 });
