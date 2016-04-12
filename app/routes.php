@@ -26,3 +26,8 @@ Route::get('/getInvolved', function()
 	return View::make('user.getInvolved');
 	
 });
+Route::get('/contact', function()
+{
+	return View::make('user.contact');
+	
+});
