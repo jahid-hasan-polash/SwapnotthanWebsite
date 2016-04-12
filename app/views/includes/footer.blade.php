@@ -5,7 +5,6 @@
 			<div class="row">
 				<!-- Thumbs Gallery -->
 				<div class="col-md-3 margin-bottom-20">
-					<h3 class="margin-bottom-10">Portfolio Highlights</h3>
 					<div class="thumbs-gallery">
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="assets/img/thumbsgallery/image1.jpg">
@@ -76,20 +75,7 @@
 						of Science and Technology,
 						Sylhet,<br />
 						Bangladesh</p>
-						<p>Email: <a href="mailto:swapnotthan@gmail.com">swapnotthan@gmail.com</a><br />
-						Website: <a href="http://www.swapnotthan.org/">www.swapnotthan.org</a></p>
-
-						<ul class="social-icons circle color no-padding">
-						<li class="social-facebook">
-                          <a href="http://www.facebook.com/swapnotthan" title="Facebook" target="_blank"></a>
-                        </li>
-                        <li class="social-googleplus">
-                          <a href="https://plus.google.com/communities/111796542250967090947" title="Google+" target="_blank"></a>
-                        </li>
-                        <li class="social-youtube">
-                          <a href="https://www.youtube.com/channel/UCChibIaW-anT4w_8AZ8ov9Q" title="Youtube" target="_blank"></a>
-                        </li>
-                        </ul>
+						<p>Email: <a href="mailto:swapnotthan@gmail.com">swapnotthan@gmail.com</a><br/>
 					</div>
 					<!-- End Contact Details -->
 					<div class="clearfix"></div>
@@ -100,23 +86,20 @@
 			<div class="container">
 				<div class="row">
 					<div id="copyright" class="col-md-4">
-						<p> &copy; 2016 Copyright By Jahid Hasan Polash & Masiur Rahman Siddiki</p>
+						<p> &copy; 2016 Copyright Swapnotthan</p>
 					</div>
 					<div id="footermenu" class="col-md-8">
-						<ul class="list-unstyled list-inline pull-right">
-							<li>
-								<a href="#" target="_blank" >Home</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" >What We Do</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" >Get Involved</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" >Contact</a>
-							</li>
-						</ul>
+						<ul class="social-icons circle color no-padding pull-right">
+						<li class="social-facebook">
+                          <a href="http://www.facebook.com/swapnotthan" title="Facebook" target="_blank"></a>
+                        </li>
+                        <li class="social-googleplus">
+                          <a href="https://plus.google.com/communities/111796542250967090947" title="Google+" target="_blank"></a>
+                        </li>
+                        <li class="social-youtube">
+                          <a href="https://www.youtube.com/channel/UCChibIaW-anT4w_8AZ8ov9Q" title="Youtube" target="_blank"></a>
+                        </li>
+                        </ul>
 					</div>
 				</div>
 			</div>
