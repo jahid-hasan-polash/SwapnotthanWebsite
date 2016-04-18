@@ -2,12 +2,12 @@
 <html lang="en">
 @include('includes.header')
 <body>
-	@include('includes.topmenu')
+	@include('user.includes.topmenu')
 	<section id="main-content">
         <section class="wrapper site-min-height">
             @yield('content')
         </section>
-        @include('includes.footer')
+        @include('user.includes.footer')
     </section>
 </body>
 

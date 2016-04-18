@@ -22,16 +22,16 @@
 					<!-- Carousel Images -->
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="assets/img/slideshow/slide1.jpg">
+							<img src="asset/img/slideshow/slide1.jpg">
 						</div>
 						<div class="item">
-							<img src="assets/img/slideshow/slide2.jpg">
+							<img src="asset/img/slideshow/slide2.jpg">
 						</div>
 						<div class="item">
-							<img src="assets/img/slideshow/slide3.jpg">
+							<img src="asset/img/slideshow/slide3.jpg">
 						</div>
 						<div class="item">
-							<img src="assets/img/slideshow/slide4.jpg">
+							<img src="asset/img/slideshow/slide4.jpg">
 						</div>
 					</div>
 					<!-- End Carousel Images -->
@@ -87,7 +87,7 @@
 					<div class="image-hover">
 						<a href="#">
 							<figure>
-								<img src="assets/img/frontpage/filler1.jpg" alt="image1">
+								<img src="asset/img/frontpage/filler1.jpg" alt="image1">
 								<div class="overlay">
 									<a class="expand" href="#">Image Link</a>
 								</div>
