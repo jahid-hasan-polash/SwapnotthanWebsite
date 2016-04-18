@@ -1,33 +1,32 @@
+<header class="header white-bg">
+          <div class="sidebar-toggle-box">
+              <div data-original-title="Toggle Navigation" data-placement="right" class="fa fa-bars tooltips"></div>
+          </div>
+          <!--logo start-->
+          <a href="{{route('dashboard')}}" class="logo" ><span>Gd Online</span></a>
+          <!--logo end-->
 
-	<div id="header" class="container">
-		<div class="row">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="#" title="Swapnotthan">
-					<img src="assets/img/logo.png" alt="Logo" />
-				</a>
-			</div>
-			<!-- End Logo -->
-			<!-- Top Menu -->
-			<div class="col-md-12 margin-top-30">
+          <div class="top-nav ">
+              <ul class="nav pull-right top-menu">
 
-				<div id="hornav" class="pull-right visible-lg">
-					<ul class="nav navbar-nav">
-						<li><a href="/" >Home</a></li>
-						<li><a href="/whatWeDo" >What We Do</a></li>
-						<li><span>Members</span>
-							<ul>
-								<li><a href="#">General</a></li>
-								<li><a href="#">Executive</a></li>
-							</ul>
-						</li>
-						<li><a href="/getInvolved" >Get Involved</a></li>
-						<li><a href="/contact" >Contact</a></li>
-						<!--<li><a href="http://www.swapnotthan.org/sweccha/" class="btn btn-success">Sweccha</a></li>-->
-					</ul>
-				</div>
-			</div>
-				<div class="clear"></div>
-				<!-- End Top Menu -->
-		</div>
-	</div>
+                  <!-- user login dropdown start-->
+                  <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                         
+                          <span class="username">{{Auth::user()->email}}</span>
+                          <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu extended logout">
+                          <div class="log-arrow-up"></div>
+                          <li><a href="{{route('user.profile')}}"><i class=" fa fa-suitcase"></i>Profile</a></li>
+
+                          <li><a href="{{route('password.change')}}"><i class="fa fa-cog"></i> Change Password</a></li>
+                          <li><a href="{{route('logout')}}"><i class="fa fa-key"></i> Log Out</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- user login dropdown end -->
+
+              </ul>
+          </div>
+      </header>
