@@ -12,22 +12,60 @@
                           <span>Dashboard</span>
                       </a>
                   </li>
-                <!-- create gd -->
+
+                  {{-- Task Manager --}}
                   <li>
 
-                      <a href="{{ URL::route('gd.create') }}">
+                      <a href="#">
                           <i class="fa fa-tasks"></i>
-                          <span>Create GD</span>
+                          <span>Task Manager</span>
+                      </a>
+                  </li>
+                  {{-- Carrier Accounts --}}
+                  <li>
+
+                      <a href="#">
+                          <i class="fa fa-plane"></i>
+                          <span>Carrier Accounts</span>
                       </a>
                   </li>
 
+                  {{-- Shipments --}}
                   <li>
-                    <a href="{{ URL::route('user.edit')}}" >
-                        <i class="fa fa-user"></i>
-                        <span>Edit Profile</span>
-                    </a>
+
+                      <a href="#">
+                          <i class="fa fa-truck"></i>
+                          <span>Shipments</span>
+                      </a>
                   </li>
-<!--
+
+                  {{-- Customers --}}
+                  <li>
+
+                      <a href="#">
+                          <i class="fa fa-user"></i>
+                          <span>Customers</span>
+                      </a>
+                  </li>
+
+                  {{-- Salespersons --}}
+                  <li>
+
+                      <a href="#">
+                          <i class="fa fa-flash"></i>
+                          <span>Sales persons</span>
+                      </a>
+                  </li>
+
+                  {{-- Staff Users --}}
+                  <li>
+
+                      <a href="#">
+                          <i class="fa fa-users"></i>
+                          <span>Staff Users</span>
+                      </a>
+                  </li>
+
                   {{-- Roles & Permissions --}}
                   <li>
 
@@ -36,7 +74,17 @@
                           <span>Roles & Permissions</span>
                       </a>
                   </li>
--->
+
+
+                  
+
+
+
+
+
+
+
+
 
               </ul>
               <!-- sidebar menu end-->
