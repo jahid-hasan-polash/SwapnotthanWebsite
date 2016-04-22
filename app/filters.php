@@ -83,8 +83,14 @@ Route::filter('guest', function()
 
 Route::filter('csrf', function()
 {
-	if (Session::token() !== Input::get('_token'))
+	if (Session::token() != Input::get('_token'))
 	{
 		throw new Illuminate\Session\TokenMismatchException;
+	}
+});
+
+Route::filter('admin',function(){
+	if(! Entrust::hasRole(Config::get('customConfig.roles.admin'))){
+		return Redirect::to('/');
 	}
 });
