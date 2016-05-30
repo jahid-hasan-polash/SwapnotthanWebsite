@@ -1,0 +1,35 @@
+    <!--footer start-->
+    <footer class="site-footer">
+          <div class="text-center">
+              2013 &copy; FlatLab by VectorLab.
+              <a href="#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+    <!--footer end-->
+
+</section>
+
+  	<?php echo HTML::script('js/jquery.js'); ?>
+
+  	<?php echo HTML::script('js/bootstrap.min.js'); ?>
+
+  	<?php echo HTML::script('js/jquery.dcjqaccordion.2.7.js', array('class' => 'include')); ?>
+
+  	<?php echo HTML::script('js/jquery.scrollTo.min.js'); ?>
+
+  	<?php echo HTML::script('js/jquery.nicescroll.js'); ?>
+
+  	<?php echo HTML::script('js/respond.min.js'); ?>
+
+    <?php echo HTML::script('js/slidebars.min.js'); ?>
+
+  	<?php echo HTML::script('js/common-scripts.js'); ?>
+
+  	<?php echo $__env->yieldContent('script'); ?>
+  	<?php echo HTML::script('js/custom.js'); ?>
+
+
+    
+

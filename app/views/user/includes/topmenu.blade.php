@@ -2,9 +2,11 @@
 	<div id="header" class="container">
 		<div class="row">
 			<!-- Logo -->
-			<div class="logo">
-				<a href="#" title="Swapnotthan">
-					<img src="asset/img/logo.png" alt="Logo" />
+			<div class="logo" >
+				<a href="{{URL::route('index')}}" title="Swapnotthan">
+					<!-- <img src="asset/img/logo.png" alt="Logo" /> -->
+					{{HTML::image("asset/img/logoSwapnotthan.png",'',array('width'=>'323px'))}}
+
 				</a>
 			</div>
 			<!-- End Logo -->
@@ -13,16 +15,16 @@
 
 				<div id="hornav" class="pull-right visible-lg">
 					<ul class="nav navbar-nav">
-						<li><a href="{{route('home')}}" >Home</a></li>
-						<li><a href="{{route('whatWeDo')}}" >What We Do</a></li>
+						<li><a href="{{URL::route('index')}}" >Home</a></li>
+						<li><a href="{{URL::route('whatWeDo')}}" >What We Do</a></li>
 						<li><span>Members</span>
 							<ul>
-								<li><a href="{{route('members')}}">General</a></li>
-								<li><a href="{{route('members.executive')}}">Executive</a></li>
+								<li><a href="{{URL::route('general')}}">General</a></li>
+								<li><a href="{{URL::route('executive')}}">Executive</a></li>
 							</ul>
 						</li>
-						<li><a href="{{route('getInvolved')}}" >Get Involved</a></li>
-						<li><a href="{{route('contact')}}" >Contact</a></li>
+						<li><a href="{{URL::route('getInvolved')}}">Get Involved</a></li>
+						<li><a href="{{URL::route('contact')}}" >Contact</a></li>
 						<!--<li><a href="http://www.swapnotthan.org/sweccha/" class="btn btn-success">Sweccha</a></li>-->
 					</ul>
 				</div>

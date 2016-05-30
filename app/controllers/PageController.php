@@ -35,7 +35,7 @@ class PageController extends \BaseController {
 
 	public function executive()
 	{
-		return View::make('user.contact');
+		return View::make('user.whatWeDo');
 	}
 
 	/**

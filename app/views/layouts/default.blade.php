@@ -4,7 +4,7 @@
 
 <body >
 <section id="container" class="">
-    @include('includes.topMenu')
+    @include('includes.topmenu')
     @include('includes.sideBar')
     <section id="main-content">
         <section class="wrapper site-min-height">

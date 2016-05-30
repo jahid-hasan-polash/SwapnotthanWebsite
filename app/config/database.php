@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'swapnotthan',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'f',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
