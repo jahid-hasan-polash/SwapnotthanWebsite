@@ -1,0 +1,37 @@
+<?php $__env->startSection('content'); ?>
+    <div class="container">
+        <div class="row margin-vert-30">
+            <?php echo $__env->make('includes.alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <th class="text-center">Id</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Address</th>
+                            <th class="text-center">Gender</th>
+                            <th class="text-center">Blood Group</th>
+                            <th class="text-center">Phone</th>
+                            <th class="text-center">Last date to donate</th>
+                        </thead>
+                        <tbody>
+                            <?php foreach($doners as $doner): ?>
+                                <tr class="text-center">
+                                    <td ><?php echo $doner->id; ?></td>
+                                    <td ><?php echo $doner->name; ?></td>
+                                    <td ><?php echo $doner->address; ?></td>
+                                    <td ><?php echo $doner->Gender; ?></td>
+                                    <td ><?php echo $doner->blood_group; ?></td>
+                                    <td ><?php echo $doner->phone; ?></td>
+                                    <td ><?php echo $doner->last_donation; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.userDefault', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

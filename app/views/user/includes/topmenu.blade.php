@@ -21,9 +21,18 @@
 							<ul>
 								<li><a href="{{URL::route('general')}}">General</a></li>
 								<li><a href="{{URL::route('executive')}}">Executive</a></li>
+								<li><a href="{{URL::route('donerList')}}">Blood Doner List</a></li>
 							</ul>
 						</li>
-						<li><a href="{{URL::route('getInvolved')}}">Get Involved</a></li>
+						<!-- 
+						<li><a href="{{URL::route('getInvolved')}}">Get Involved</a></li> 
+						-->
+						<li><span>Get Involved</span>
+							<ul>
+								<li><a href="{{URL::route('getInvolved')}}">Member</a></li>
+								<li><a href="{{URL::route('newDoner')}}">Blood Doner</a></li>
+							</ul>
+						</li>
 						<li><a href="{{URL::route('contact')}}" >Contact</a></li>
 						<!--<li><a href="http://www.swapnotthan.org/sweccha/" class="btn btn-success">Sweccha</a></li>-->
 					</ul>

@@ -20,7 +20,11 @@ Route::group(['before' => 'guest'], function(){
 
 	Route::get('/news/{id}',array('as'=>'newsDetails', 'uses'=>'PageController@news'));
 	Route::get('/sector/{id}',array('as'=>'sectorDetails', 'uses'=>'PageController@sectorDetails'));
-
+	Route::get('/doner/new',array('as'=>'newDoner','uses'=>'BloodDonerController@create'));
+	Route::post('/doner/store',array('as'=>'store.newDoner','uses'=>'BloodDonerController@store'));
+	Route::get('/doner/list',array('as'=>'donerList','uses'=>'BloodDonerController@index'));
+	
+	
 });
 
 Route::group(array('before' => 'auth'), function()

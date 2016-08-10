@@ -1,0 +1,105 @@
+<?php $__env->startSection('content'); ?>
+    <div class="container">
+        <div class="row margin-vert-30">
+            <?php echo $__env->make('includes.alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                    <?php echo Form::open(array('route' => 'store.newDoner','method'=>'post','class' => 'signup-page')); ?>
+
+
+                    	<div class="signup-header">
+							<h2 align='center'>Register as a new Blood Doner</h2>
+						</div>
+						<hr>
+						<!--First Name and last Name -->
+						<div class="row">
+							<div class="col-sm-6">
+								<?php echo Form::text('firstName', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'First Name *')); ?>
+
+
+							</div>
+							<div class="col-sm-6">
+								<?php echo Form::text('lastName', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Last Name *')); ?>
+
+							</div>
+						</div>
+
+						<!-- Address -->
+						<?php echo Form::text('address', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Current Address*')); ?>
+
+
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- Gender -->
+								<?php echo Form::select('gender', $gender, null, array('class' => 'form-control margin-bottom-20', 'required')); ?>
+
+							</div>
+							<div class="col-sm-6">
+								<!-- Blood Group -->
+								<?php echo Form::select('bg', $bloodGroup, null, array('class' => 'form-control margin-bottom-20', 'required')); ?>
+
+							</div>
+						</div>
+
+						<!-- Phone No-->
+						<?php echo Form::text('phoneNo', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Phone No *')); ?>
+
+
+						<!-- Last donation date -->
+						<?php echo Form::label('last_donation', 'Last blood donation date', array('class' => 'control-label')); ?>
+
+						<input type="date" name="date" class="form-control margin-bottom-20" max="">
+						 
+						 <hr>
+						<!-- Phone No hiding-->
+						<?php echo Form::label('security', 'If you want to Restrict your phone number from being public', array('class' => 'control-label')); ?>
+
+						<?php echo Form::text('security', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'type "h" to hide or keep it blank')); ?>
+
+
+						<!-- optional field for comments -->
+						<?php echo Form::text('optional', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Optional')); ?>
+
+						
+						<div class="text-center">
+							<?php echo Form::submit('Register', array('class' => 'btn btn-primary')); ?>
+
+						</div>
+
+					<!-- Form close -->
+                    <?php echo Form::close(); ?>
+
+                </div>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('style'); ?>
+
+<?php echo HTML::style('assets/bootstrap-datepicker/css/datepicker.css'); ?>
+
+ 
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('script'); ?>
+
+ <?php echo HTML::script('assets/bootstrap-datepicker/js/bootstrap-datepicker.js'); ?>
+
+
+
+   <script type="text/javascript">
+       $(function() {
+  // Enable Pickadate on an input field and 
+  // specifying date format for hidden input field
+  $('#date').pickadate({
+    formatSubmit : 'yyyy/mm/dd'
+  });
+});
+  });
+
+
+
+   </script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.userDefault', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

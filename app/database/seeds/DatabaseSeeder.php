@@ -17,6 +17,9 @@ class DatabaseSeeder extends Seeder {
 		 $this->call('EntrustTableSeeder');
 		 $this->call('BloodGroupTableSeeder');
 		 $this->call('OurMissionTableSeeder');
+		 $this->call('GenderTableSeeder');
+		 $this->call('NewsTableSeeder');
+		 $this->call('SectorsTableSeeder');
 	}
 
 }
