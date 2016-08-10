@@ -60,9 +60,9 @@ class MemberController extends \BaseController {
 			if($member->save()){
 				$details = new MemberDetails;
 				$details->father = $data['father'];
-				$details->father = $data['mother'];
-				$details->father = $data['email'];
-				$details->father = $data['address'];
+				$details->mother = $data['mother'];
+				$details->email = $data['email'];
+				$details->address = $data['address'];
 				$details->save();
 				
 				return Redirect::route('login')->with('success','Registration Successful. You can log in now.');

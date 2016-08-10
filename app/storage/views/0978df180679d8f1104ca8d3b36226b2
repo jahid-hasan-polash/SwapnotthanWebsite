@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php echo $__env->make('includes.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<body >
+<section id="container" class="">
+    <?php echo $__env->make('includes.topmenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo $__env->make('includes.sideBar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <section id="main-content">
+        <section class="wrapper site-min-height">
+            <?php echo $__env->yieldContent('content'); ?>
+        </section>
+    </section>
+    <?php /*include rightSideBar*/ ?>
+
+
+    <?php echo $__env->make('includes.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+
+</body>
+</html>

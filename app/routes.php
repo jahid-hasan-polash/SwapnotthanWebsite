@@ -16,8 +16,10 @@ Route::group(['before' => 'guest'], function(){
 	Route::get('/user/executives', array('as'=>'executive', 'uses' => 'PageController@executive'));
 	Route::get('/user/contact', array('as'=>'contact', 'uses' => 'PageController@contact'));
 	Route::get('/user/getInvolved', array('as'=>'getInvolved', 'uses' => 'MemberController@create'));
-	Route::post('getInvolved', array('uses' => 'MemberController@store'));
+	Route::post('getInvolved', array( 'as'=>'user.getInvolved','uses' => 'MemberController@store'));
 
+	Route::get('/news/{id}',array('as'=>'newsDetails', 'uses'=>'PageController@news'));
+	Route::get('/sector/{id}',array('as'=>'sectorDetails', 'uses'=>'PageController@sectorDetails'));
 
 });
 

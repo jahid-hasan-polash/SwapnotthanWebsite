@@ -1,5 +1,5 @@
-
-	<div id="header" class="container">
+<div id="pre_header" class="visible-lg"></div>
+	<div id="header" class="container" style="padding-top:10px">
 		<div class="row">
 			<!-- Logo -->
 			<div class="logo" >

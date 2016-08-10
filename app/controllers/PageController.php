@@ -10,7 +10,13 @@ class PageController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('user.index');
+		$missionDetail = OurMission::first();
+		$newses = News::get();
+		$sectors = Sector::all();
+		return View::make('user.index')
+				->with('missionDetail',$missionDetail)
+				->with('newses',$newses)
+				->with('sectors',$sectors);
 	}
 
 	public function whatWeDo()
@@ -30,14 +36,27 @@ class PageController extends \BaseController {
 
 	public function members()
 	{
-		return View::make('user.whatWeDo');
+		$members = Members::where('role_id',2)->get();
+		return View::make('user.members')
+				->with('members',$members);
 	}
 
 	public function executive()
 	{
-		return View::make('user.whatWeDo');
+		$members = Members::where('role_id','>=',3)->get();
+		return View::make('user.members')
+				->with('members',$members);
 	}
 
+	public function news($id){
+
+		return News::where('id',$id)->get();
+	}
+
+	public function sectorDetails($id){
+
+		return SectorDetail::where('sector_id',$id)->get();
+	}
 	/**
 	 * Show the form for creating a new resource.
 	 * GET /page/create

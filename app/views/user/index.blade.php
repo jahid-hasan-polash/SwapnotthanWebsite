@@ -51,7 +51,7 @@
 				<!-- Main Text -->
 				<div class="col-md-9">
 					<h2 style="color: #009973">Our Mission</h2>
-					<p>It is the small try of SUST student to achive a big dream.Our aim is to motivate the students to do something positive worthwhile and constructive for themselves and rest of the society...</p>
+					<p>{{$missionDetail->description}}</p>
 					<a class="btn btn-success" href="#"><!-- Read More page -->
 						Read More
 						<i class="fa-chevron-right"></i>
@@ -62,18 +62,9 @@
 				<div class="col-md-3">
 					<h2 class="margin-bottom-10 " style="color: #009973">Latest News</h2>
 					<ul class="menu">
-						<li>
-							<a class="fa-angle-right" href="#" >Placerat facer possim</a>
-						</li>
-						<li>
-							<a class="fa-angle-right" href="#" >Quam nunc putamus</a>
-						</li>
-						<li>
-							<a class="fa-angle-right" href="#" >Velit esse molestie</a>
-						</li>
-						<li>
-							<a class="fa-angle-right" href="#" >Nam liber tempor</a>
-						</li>
+						@foreach($newses as $news)
+							<a class="fa-angle-right" href="{{URL::route('newsDetails', $news->id)}}">{{$news->title}}</a>
+						@endforeach
 					</ul>
 				</div>
 				<!-- End Side Column -->
@@ -81,25 +72,27 @@
 
 			<!-- Portfolio -->
 				<!-- Portfolio Item This should be generated-->
-				<h2 style="color: #009973">Our Campaigns</h2>
+				<h2 style="color: #009973">Working Sectors</h2>
 				<!-- for each campaign -->
+				@foreach($sectors as $sector)
 				<div class="portfolio-item col-sm-4 animate fadeIn">
 					<div class="image-hover">
-						<a href="#">
+						<a href="{{URL::route('sectorDetails', $sector->id)}}">
 							<figure>
 								<img src="asset/img/frontpage/filler1.jpg" alt="image1">
 								<div class="overlay">
 									<a class="expand" href="#">Image Link</a>
 								</div>
 							</figure>
-							<h3 class="margin-top-20" style="color: #009973">Quam putamus</h3>
-							<p class="margin-top-10 margin-bottom-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							<h3 class="margin-top-20" style="color: #009973">{{$sector->title}}</h3>
+							<p class="margin-top-10 margin-bottom-20">{{$sector->description}}</p>
 							<div class="btn btn-danger">
-								<a class="info" href="#">Read more</a>
+								<a class="info" href="{{URL::route('sectorDetails', $sector->id)}}">Read more</a>
 							</div>
 						</a>
 					</div>
 				</div>
+				@endforeach
 
 
 	</div>
