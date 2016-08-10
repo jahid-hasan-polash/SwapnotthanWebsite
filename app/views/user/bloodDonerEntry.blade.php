@@ -8,7 +8,7 @@
                     {{ Form::open(array('route' => 'store.newDoner','method'=>'post','class' => 'signup-page')) }}
 
                     	<div class="signup-header">
-							<h2 align='center'>Register as a new Blood Doner</h2>
+							<h2 align='center'>Register as a new Blood Donor</h2>
 						</div>
 						<hr>
 						<!--First Name and last Name -->
