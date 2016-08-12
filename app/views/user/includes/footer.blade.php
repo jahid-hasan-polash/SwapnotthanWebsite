@@ -94,7 +94,11 @@
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 	</div>
+=======
+		</div>
+>>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
 <div id="footer">
 			<div class="container">
 				<div class="row">
@@ -118,7 +122,10 @@
 			</div>
 </div>
 <!-- JS -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
 <!-- <script type="text/javascript" src="asset/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="asset/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="asset/js/scripts.js"></script> -->
@@ -142,4 +149,7 @@
 {{HTML::script("asset/js/jquery.visible.js")}}
 {{HTML::script("asset/js/slimbox2.js")}}
 {{HTML::script("asset/js/modernizr.custom.js")}}
+<<<<<<< HEAD
 
+=======
+>>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
