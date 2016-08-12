@@ -94,6 +94,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
 <div id="footer">
 			<div class="container">
 				<div class="row">
@@ -117,7 +118,6 @@
 			</div>
 </div>
 <!-- JS -->
-@section('script')
 <!-- <script type="text/javascript" src="asset/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="asset/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="asset/js/scripts.js"></script> -->
@@ -141,5 +141,3 @@
 {{HTML::script("asset/js/jquery.visible.js")}}
 {{HTML::script("asset/js/slimbox2.js")}}
 {{HTML::script("asset/js/modernizr.custom.js")}}
-
-@stop
