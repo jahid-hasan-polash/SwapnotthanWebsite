@@ -9,72 +9,84 @@
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image1.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image1.jpg" alt="image1.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image1.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image1.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image2.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image2.jpg" alt="image2.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image2.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image2.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image3.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image3.jpg" alt="image3.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image3.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image3.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image4.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image4.jpg" alt="image4.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image4.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image4.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image6.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image6.jpg" alt="image6.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image6.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image6.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image7.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image7.jpg" alt="image7.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image7.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image7.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image8.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image8.jpg" alt="image8.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image8.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image8.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image9.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image9.jpg" alt="image9.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image9.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image9.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image92.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image92.jpg" alt="image92.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image92.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image92.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image94.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image94.jpg" alt="image94.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image94.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image94.jpg"); ?>
+
 						<i></i></a>
 						
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image95.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image95.jpg" alt="image95.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image95.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image95.jpg"); ?>
+
 						<i></i></a>
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="asset/img/thumbsgallery/image96.jpg">
 							<!-- <img src="asset/img/thumbsgallery/thumbs/image96.jpg" alt="image96.jpg"> -->
-							{{HTML::image("asset/img/thumbsgallery/thumbs/image96.jpg")}}
+							<?php echo HTML::image("asset/img/thumbsgallery/thumbs/image96.jpg"); ?>
+
 						<i></i></a>
 						
 						</div>			<div class="clearfix"></div>
@@ -134,12 +146,20 @@
 <!-- <script src="asset/js/modernizr.custom.js" type="text/javascript"></script> -->
 <!-- End JS -->
 
-{{HTML::script("asset/js/jquery.min.js")}}
-{{HTML::script("asset/js/bootstrap.min.js")}}
-{{HTML::script("asset/js/scripts.js")}}
-{{HTML::script("asset/js/jquery.isotope.js")}}
-{{HTML::script("asset/js/jquery.slicknav.js")}}
-{{HTML::script("asset/js/jquery.visible.js")}}
-{{HTML::script("asset/js/slimbox2.js")}}
-{{HTML::script("asset/js/modernizr.custom.js")}}
+<?php echo HTML::script("asset/js/jquery.min.js"); ?>
+
+<?php echo HTML::script("asset/js/bootstrap.min.js"); ?>
+
+<?php echo HTML::script("asset/js/scripts.js"); ?>
+
+<?php echo HTML::script("asset/js/jquery.isotope.js"); ?>
+
+<?php echo HTML::script("asset/js/jquery.slicknav.js"); ?>
+
+<?php echo HTML::script("asset/js/jquery.visible.js"); ?>
+
+<?php echo HTML::script("asset/js/slimbox2.js"); ?>
+
+<?php echo HTML::script("asset/js/modernizr.custom.js"); ?>
+
 

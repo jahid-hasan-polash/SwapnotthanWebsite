@@ -1,0 +1,88 @@
+<?php $__env->startSection('content'); ?>
+    <div class="container">
+        <div class="row margin-vert-30">
+            <?php echo $__env->make('includes.alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                    <?php echo Form::open(array('route' => 'user.getInvolved','method'=>'post','class' => 'signup-page')); ?>
+
+
+                    	<div class="signup-header">
+							<h2 align='center'>Register as a new member</h2>
+						</div>
+						<hr>
+						<!--First Name and last Name -->
+						<div class="row">
+							<div class="col-sm-6">
+								<?php echo Form::text('firstName', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'First Name *')); ?>
+
+
+							</div>
+							<div class="col-sm-6">
+								<?php echo Form::text('lastName', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Last Name *')); ?>
+
+							</div>
+						</div>
+
+						<!-- Registration no -->
+						<?php echo Form::text('reg_no', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Registration No *')); ?>
+
+
+						<!-- Phone No-->
+						<?php echo Form::text('phoneNo', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Phone No *')); ?>
+
+
+						<!-- Fathers name -->
+						<?php echo Form::text('father', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Fathers name')); ?>
+
+
+						<!-- Mothers name -->
+						<?php echo Form::text('mother', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Mothers name')); ?>
+
+
+						<!-- email -->
+						<?php echo Form::text('email', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Email')); ?>
+
+
+						<!-- Address -->
+						<?php echo Form::text('address', '' , array('class' => 'form-control margin-bottom-20')); ?>
+
+
+						<div class="text-center">
+							<?php echo Form::submit('Register', array('class' => 'btn btn-primary')); ?>
+
+						</div>
+
+					<!-- Form close -->
+                    <?php echo Form::close(); ?>
+
+                </div>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('script'); ?>
+
+ <?php echo HTML::style('assets/bootstrap-datepicker/css/datepicker.css'); ?>
+
+ 
+ <?php echo HTML::script('assets/bootstrap-datepicker/js/bootstrap-datepicker.js'); ?>
+
+
+
+   <script type="text/javascript">
+       $(document).ready(function() {
+           $("#date").datepicker({
+               format: 'yyyy-mm-dd'
+           });
+           $( "#date" ).datepicker( "setDate", new Date() );
+
+       
+       });
+
+
+
+   </script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.userDefault', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
