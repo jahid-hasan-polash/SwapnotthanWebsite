@@ -5,7 +5,7 @@
 			<div class="logo" >
 				<a href="{{URL::route('index')}}" title="Swapnotthan">
 					<!-- <img src="asset/img/logo.png" alt="Logo" /> -->
-					{{HTML::image("asset/img/logoSwapnotthan.png",'',array('width'=>'323px'))}}
+					{{HTML::image("asset/img/swapnotthan.png",'',array('width'=>'280px'))}}
 
 				</a>
 			</div>
