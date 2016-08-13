@@ -9,18 +9,6 @@
 	<!-- Favicon -->
 	<link href="{{{ asset('asset/img/favIcon.png') }}}" rel="shortcut icon"><!-- Doesn't work -->
 	
-	<!-- Bootstrap Core CSS -->
-	<!-- <link rel="stylesheet" href="asset/css/bootstrap.css" rel="stylesheet"> -->
-	<!-- Template CSS -->
-	<!-- <link rel="stylesheet" href="asset/css/animate.css" rel="stylesheet"> -->
-	<!-- <link rel="stylesheet" href="asset/css/font-awesome.css" rel="stylesheet"> -->
-	<!-- <link rel="stylesheet" href="asset/css/nexus.css" rel="stylesheet"> -->
-<!-- 	<link rel="stylesheet" href="asset/css/responsive.css" rel="stylesheet"> -->
-	<!-- <link rel="stylesheet" href="asset/css/custom.css" rel="stylesheet"> -->
-	<!-- Google Fonts-->
-	<!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css"> -->
-
 	{{HTML::style("asset/css/custom.css")}}
 	{{HTML::style("asset/css/bootstrap.css")}}
 	{{HTML::style("asset/css/animate.css")}}

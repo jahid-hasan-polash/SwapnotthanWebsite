@@ -78,27 +78,23 @@
 						<i></i></a>
 						
 						</div>			<div class="clearfix"></div>
-					</div>
+				</div>
 					<!-- End Thumbs Gallery -->
 					<!-- Contact Details -->
-					<div class="col-md-3 margin-bottom-20 pull-right">
-						<h3 class="margin-bottom-10">Contact Details</h3>
-						<p>Shahjalal University
-						of Science and Technology,
-						Sylhet,<br />
-						Bangladesh</p>
-						<p>Email: <a href="mailto:swapnotthan@gmail.com">swapnotthan@gmail.com</a><br/>
-					</div>
-					<!-- End Contact Details -->
-					<div class="clearfix"></div>
+				<div class="col-md-3 margin-bottom-20 pull-right">
+					<h3 class="margin-bottom-10">Contact Details</h3>
+					<p>Shahjalal University
+					of Science and Technology,
+					Sylhet,<br />
+					Bangladesh</p>
+					<p>Email: <a href="mailto:swapnotthan@gmail.com">swapnotthan@gmail.com</a><br/>
 				</div>
+					<!-- End Contact Details -->
+				<div class="clearfix"></div>
 			</div>
 		</div>
-<<<<<<< HEAD
 	</div>
-=======
-		</div>
->>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
+
 <div id="footer">
 			<div class="container">
 				<div class="row">
@@ -121,25 +117,6 @@
 				</div>
 			</div>
 </div>
-<!-- JS -->
-<<<<<<< HEAD
-
-=======
->>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
-<!-- <script type="text/javascript" src="asset/js/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="asset/js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="asset/js/scripts.js"></script> -->
-<!-- Isotope - Portfolio Sorting -->
-<!-- <script type="text/javascript" src="asset/js/jquery.isotope.js" type="text/javascript"></script> -->
-<!-- Mobile Menu - Slicknav -->
-<!-- <script type="text/javascript" src="asset/js/jquery.slicknav.js" type="text/javascript"></script> -->
-<!-- Animate on Scroll-->
-<!-- <script type="text/javascript" src="asset/js/jquery.visible.js" charset="utf-8"></script> -->
-<!-- Slimbox2-->
-<!-- <script type="text/javascript" src="asset/js/slimbox2.js" charset="utf-8"></script> -->
-<!-- Modernizr -->
-<!-- <script src="asset/js/modernizr.custom.js" type="text/javascript"></script> -->
-<!-- End JS -->
 
 {{HTML::script("asset/js/jquery.min.js")}}
 {{HTML::script("asset/js/bootstrap.min.js")}}
@@ -149,7 +126,3 @@
 {{HTML::script("asset/js/jquery.visible.js")}}
 {{HTML::script("asset/js/slimbox2.js")}}
 {{HTML::script("asset/js/modernizr.custom.js")}}
-<<<<<<< HEAD
-
-=======
->>>>>>> d34475d7c60c119a46476e99d30adaf42c1b00a3
