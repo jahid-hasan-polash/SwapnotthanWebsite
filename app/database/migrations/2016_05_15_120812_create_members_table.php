@@ -22,8 +22,10 @@ class CreateMembersTable extends Migration {
 				      ->onDelete('cascade')->onUpdate('cascade');
 
 			$table->string('name');
+			$table->string('dept');
 			$table->integer('reg_no');
 			$table->string('phone');
+			$table->string('role_name');
 			$table->timestamps();
 		});
 	}

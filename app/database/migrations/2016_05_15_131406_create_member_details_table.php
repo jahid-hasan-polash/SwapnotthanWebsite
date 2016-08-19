@@ -22,8 +22,9 @@ class CreateMemberDetailsTable extends Migration {
 
 			$table->string('father');
 			$table->string('mother');
+			$table->string('email');
 			$table->string('address');
-
+			$table->string('bl_group');
 			$table->timestamps();
 		});
 	}

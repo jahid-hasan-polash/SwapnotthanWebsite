@@ -5,6 +5,7 @@
             @include('includes.alert')
 
                 <div class="table-responsive">
+                    @if(count($doners))
                     <table class="table table-bordered">
                         <thead>
                             <th class="text-center">Id</th>
@@ -29,6 +30,23 @@
                             @endforeach
                         </tbody>
                     </table>
+                    @else
+                    No Data Found
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    @endif
                 </div>
         </div>
     </div>

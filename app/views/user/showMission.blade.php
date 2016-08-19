@@ -3,14 +3,10 @@
 	<div id="content" class="container">
 			<div class="row margin-vert-30">
 				<!-- Main Column -->
-				@foreach($details as $detail)
 				<div class="col-md-12">
-					<h2>{{ $detail->title }}</h2>
-					<p>{{ $detail->description }}</p>
-					
+					<h2>Our Mission</h2>
+					{{ $mission }}
 				</div>
-				<hr>
-				@endforeach
 				<!-- End Main Column -->
 			</div>
 		</div>

@@ -4,6 +4,7 @@
             <?php echo $__env->make('includes.alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
                 <div class="table-responsive">
+                    <?php if(count($doners)): ?>
                     <table class="table table-bordered">
                         <thead>
                             <th class="text-center">Id</th>
@@ -28,6 +29,23 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    <?php else: ?>
+                    No Data Found
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <?php endif; ?>
                 </div>
         </div>
     </div>

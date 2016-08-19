@@ -21,27 +21,27 @@
 					<!-- End Carousel Indicators -->
 					<!-- Carousel Images -->
 					<div class="carousel-inner">
-						<div class="item active">
-							<img src="asset/img/slideshow/slide1.jpg">
+						<div class="item active">			
+							{{ HTML::image('asset/img/slideshow/slide1.jpg') }}
 						</div>
 						<div class="item">
-							<img src="asset/img/slideshow/slide2.jpg">
+							{{ HTML::image('asset/img/slideshow/slide2.jpg') }}
 						</div>
 						<div class="item">
-							<img src="asset/img/slideshow/slide3.jpg">
+							{{ HTML::image('asset/img/slideshow/slide3.jpg') }}
 						</div>
 						<div class="item">
-							<img src="asset/img/slideshow/slide4.jpg">
+							{{ HTML::image('asset/img/slideshow/slide4.jpg') }}
 						</div>
 					</div>
 					<!-- End Carousel Images -->
 					<!-- Carousel Controls -->
-					<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+					<!-- <a class="left carousel-control" href="#carousel-example" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 					</a>
 					<a class="right carousel-control" href="#carousel-example" data-slide="next">
 						<span class="glyphicon glyphicon-chevron-right"></span>
-					</a>
+					</a> -->
 					<!-- End Carousel Controls -->
 				</div>
 				<!-- End Carousel Slideshow -->
@@ -52,7 +52,7 @@
 				<div class="col-md-9">
 					<h2 style="color: #009973">Our Mission</h2>
 					<p>{{$missionDetail->description}}</p>
-					<a class="btn btn-success" href="#"><!-- Read More page -->
+					<a class="btn btn-success" href="{{URL::route('user.home.mission')}}"><!-- Read More page -->
 						Read More
 						<i class="fa-chevron-right"></i>
 					</a>
@@ -77,7 +77,7 @@
 				@foreach($sectors as $sector)
 				<div class="portfolio-item col-sm-4 animate fadeIn">
 					<div class="image-hover">
-						<a href="{{URL::route('sectorDetails', $sector->id)}}">
+						<a href="{{URL::route('user.home.sector', $sector->id)}}">
 							<figure>
 								<img src="asset/img/frontpage/filler1.jpg" alt="image1">
 								<div class="overlay">
@@ -87,7 +87,7 @@
 							<h3 class="margin-top-20" style="color: #009973">{{$sector->title}}</h3>
 							<p class="margin-top-10 margin-bottom-20">{{$sector->description}}</p>
 							<div class="btn btn-danger">
-								<a class="info" href="{{URL::route('sectorDetails', $sector->id)}}">Read more</a>
+								<a class="info" href="{{URL::route('user.home.sector', $sector->id)}}">Read more</a>
 							</div>
 						</a>
 					</div>

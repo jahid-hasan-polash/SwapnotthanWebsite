@@ -16,6 +16,20 @@ class RolesTableSeeder extends Seeder {
 				'name' => $role
 			]);
 		}
+
+		$memberRole = [
+			[
+				'name' => 'General',
+				'created_at' => date('Y-m-d H:i:s'),
+				'updated_at' => date('Y-m-d H:i:s')
+			],
+			[
+				'name' => 'Executive',
+				'created_at' => date('Y-m-d H:i:s'),
+				'updated_at' => date('Y-m-d H:i:s')
+			]
+		];
+		DB::table('roles')->insert($memberRole);
 	}
 
 }

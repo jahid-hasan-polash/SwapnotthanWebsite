@@ -22,11 +22,18 @@
 							</div>
 						</div>
 
+						<!-- Department -->
+						<label>Department</label>
+						{{ Form::select('dept', $depts, null, array('class' => 'form-control margin-bottom-20', 'required')) }}
+
 						<!-- Registration no -->
 						{{ Form::text('reg_no', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Registration No *')) }}
 
 						<!-- Phone No-->
 						{{ Form::text('phoneNo', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Phone No *')) }}
+
+						<!-- email -->
+						{{ Form::text('email', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Email')) }}
 
 						<!-- Fathers name -->
 						{{ Form::text('father', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Fathers name')) }}
@@ -34,11 +41,11 @@
 						<!-- Mothers name -->
 						{{ Form::text('mother', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Mothers name')) }}
 
-						<!-- email -->
-						{{ Form::text('email', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Email')) }}
-
 						<!-- Address -->
-						{{ Form::text('address', '' , array('class' => 'form-control margin-bottom-20')) }}
+						{{ Form::text('address', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Address')) }}
+						
+						<!-- Blood Group -->
+						{{ Form::select('bl_group', $bloodGroup , null, array('class' => 'form-control margin-bottom-20')) }}
 
 						<div class="text-center">
 							{{ Form::submit('Register', array('class' => 'btn btn-primary')) }}

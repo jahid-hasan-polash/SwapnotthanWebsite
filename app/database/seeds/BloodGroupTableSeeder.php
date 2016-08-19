@@ -47,6 +47,11 @@ class BloodGroupTableSeeder extends Seeder {
 								'blood_group' => "O-",
 								'created_at' => date('Y-m-d H:i:s'),
 								'updated_at' => date('Y-m-d H:i:s')
+					],
+					[
+								'blood_group' => "Don't Know",
+								'created_at' => date('Y-m-d H:i:s'),
+								'updated_at' => date('Y-m-d H:i:s')
 					]
 
 		];

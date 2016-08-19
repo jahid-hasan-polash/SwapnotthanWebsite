@@ -11,7 +11,7 @@ class PageController extends \BaseController {
 	public function index()
 	{
 		$missionDetail = OurMission::first();
-		$newses = News::get();
+		$newses = News::orderBy('created_at')->get();
 		$sectors = Sector::all();
 		return View::make('user.index')
 				->with('missionDetail',$missionDetail)
@@ -21,12 +21,10 @@ class PageController extends \BaseController {
 
 	public function whatWeDo()
 	{
-		return View::make('user.whatWeDo');
-	}
-
-	public function getInvolved()
-	{
-		return View::make('user.getInvolved');
+		$details = SectorDetail::all();
+		return View::make('user.whatWeDo')
+					->with('details',$details);
+		;
 	}
 
 	public function contact()
@@ -48,83 +46,27 @@ class PageController extends \BaseController {
 				->with('members',$members);
 	}
 
-	public function news($id){
+	public function showMission(){
 
-		return News::where('id',$id)->get();
+		$mission = OurMission::first()->description;
+		return View::make('user.showMission')
+						->with('mission',$mission);
 	}
 
-	public function sectorDetails($id){
+	public function showSectorDetail($id){
 
-		return SectorDetail::where('sector_id',$id)->get();
-	}
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /page/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+		$details = SectorDetail::where('sector_id',$id)->get();
+		return View::make('user.sector')
+					->with('details',$details);
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 * POST /page
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
-	}
+	public function newsDetails($id){
 
-	/**
-	 * Display the specified resource.
-	 * GET /page/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /page/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /page/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /page/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
+		$news = News::where('id',$id)->first();
+		$newsAll = DB::table('news')->orderBy('created_at')->get();
+		return View::make('user.news')
+				->with('news',$news)
+				->with('newsAll',$newsAll);
+		}
 
 }

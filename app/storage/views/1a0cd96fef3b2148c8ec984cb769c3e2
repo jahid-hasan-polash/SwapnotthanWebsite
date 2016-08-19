@@ -24,12 +24,21 @@
 							</div>
 						</div>
 
+						<!-- Department -->
+						<label>Department</label>
+						<?php echo Form::select('dept', $depts, null, array('class' => 'form-control margin-bottom-20', 'required')); ?>
+
+
 						<!-- Registration no -->
 						<?php echo Form::text('reg_no', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Registration No *')); ?>
 
 
 						<!-- Phone No-->
 						<?php echo Form::text('phoneNo', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Phone No *')); ?>
+
+
+						<!-- email -->
+						<?php echo Form::text('email', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Email')); ?>
 
 
 						<!-- Fathers name -->
@@ -40,12 +49,12 @@
 						<?php echo Form::text('mother', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Mothers name')); ?>
 
 
-						<!-- email -->
-						<?php echo Form::text('email', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Email')); ?>
-
-
 						<!-- Address -->
-						<?php echo Form::text('address', '' , array('class' => 'form-control margin-bottom-20')); ?>
+						<?php echo Form::text('address', '' , array('class' => 'form-control margin-bottom-20', 'placeholder' => 'Address')); ?>
+
+						
+						<!-- Blood Group -->
+						<?php echo Form::select('bl_group', $bloodGroup , null, array('class' => 'form-control margin-bottom-20')); ?>
 
 
 						<div class="text-center">
