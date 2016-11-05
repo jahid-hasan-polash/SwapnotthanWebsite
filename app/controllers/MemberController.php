@@ -41,7 +41,6 @@ class MemberController extends \BaseController {
 	public function store()
 	{
 		$rules = [
-					'id' => 'required|unique:members',
 					'firstName'  => 'required',
 					'phoneNo' 	=>	'required',
 					'reg_no'	=>	'required',
